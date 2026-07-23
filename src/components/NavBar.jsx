@@ -12,15 +12,10 @@ const NavBar = ({ selectedPage, onSetPage }) => {
           
       // TODO: What does this function do?
       return pages.map(page => (
-         <li
-            key={page.key}
-            style={{
-              ...styles.sidebarLink,
-              ...(page.key === selectedPage ? styles.selected : {}),
-            }}
-            onClick={() => onSetPage(page.key)}
-          >
+         <li key={page.key}>
+          <SpecularButton onClick={() => onSetPage(page.key)} size="lg">
             {page.name}
+          </SpecularButton>
           </li>
       ));
     }
@@ -28,7 +23,7 @@ const NavBar = ({ selectedPage, onSetPage }) => {
   return (
     <nav style={styles.navbar}>
         <h1>My Amazing App</h1>
-        <ul>
+        <ul style={styles.navList}>
         {renderPageLinks()}
       </ul>
       </nav>
@@ -40,10 +35,17 @@ const NavBar = ({ selectedPage, onSetPage }) => {
 // Inline styles for simplicity
 const styles = {  
   navbar: {
-    backgroundColor: '#333',
     color: '#fff',
     padding: '10px',
     textAlign: 'center',
+  },
+  navList: {
+    display: 'flex',
+    justifyContent: 'center',
+    gap: '10px',
+    listStyle: 'none',
+    padding: 0,
+    margin: 0,
   },
 };
 

@@ -1,7 +1,6 @@
 // App.js
 import { useState } from 'react';
 import Aurora from './components/Aurora';
-import SpecularButton from './SpecularButton';
 import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
