@@ -1,0 +1,38 @@
+# Node dependencies
+node_modules/
+
+# Environment variables (Crucial for security!)
+.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# VS Code settings
+.vscode/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Production build outputs (Don't track compiled code)
+/dist
+/build
+/out
+
+# Testing coverage reports
+/coverage
+
+# Lockfiles and local caches (Optional but highly recommended)
+# Note: Keep the lockfile for the package manager you DO use (e.g., keep package-lock.json if using npm)
+# but ignore the ones you don't use to avoid clutter.
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
+.eslintcache
+
+# Next.js / Vite / CRA specific cache folders
+.next/
+.vite/
+.turbo/
