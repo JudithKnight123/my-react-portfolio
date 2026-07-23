@@ -1,5 +1,7 @@
 // App.js
 import { useState } from 'react';
+import Aurora from './components/Aurora';
+import SpecularButton from './SpecularButton';
 import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
@@ -12,6 +14,13 @@ function App() {
   // TODO: How doe sthe Layout component know which page to render?
 
   return (
+    <>
+<Aurora
+  colorStops={["#7cff67","#B497CF","#5227FF"]}
+  blend={0.5}
+  amplitude={1.0}
+  speed={1}
+/>
     <Layout selectedPage={page} onSetPage={setPage}>
 
       {page === 'home' && <HomePage />}
@@ -19,6 +28,7 @@ function App() {
       {page === 'contact' && <ContactPage />}
 
     </Layout>
+    </>
   );
 }
 

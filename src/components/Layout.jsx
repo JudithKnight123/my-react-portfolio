@@ -7,21 +7,12 @@ const Layout = ({ children, selectedPage, onSetPage }) => {
   return (
     <div style={styles.container}>
       {/* Navigation */}
-      <NavBar />
-
-      <div style={styles.main}>
-        {/* Sidebar */}
-        <aside style={styles.sidebar}>
-          <ul>
-           {renderPageLinks()}
-          </ul>
-        </aside>
+      <NavBar selectedPage={selectedPage} onSetPage={onSetPage} />
 
         {/* Content Area */}
         <section style={styles.content}>
           {children}
         </section>
-      </div>
 
       {/* Footer */}
       <Footer />
