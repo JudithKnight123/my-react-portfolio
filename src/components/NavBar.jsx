@@ -3,7 +3,7 @@ import SpecularButton from './SpecularButton';
 const pages = [
   { name: 'Home', key: 'home' },
   { name: 'About', key: 'about' },
-  { name: 'Contact', key: 'contact' },
+  { name: 'Skills', key: 'skills' },
 ]
 
 const NavBar = ({ selectedPage, onSetPage }) => {

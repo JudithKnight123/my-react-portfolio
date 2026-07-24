@@ -66,11 +66,13 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-.aboutMeMain{
+.SkillsMain{
   text-align: center;
 }
 .ArrangeBoxes{
     display: flex;
     margin: 0 auto;
     justify-content: center;
+    flex-flow: row wrap;
 }
+
