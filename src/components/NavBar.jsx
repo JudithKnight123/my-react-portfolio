@@ -13,7 +13,7 @@ const NavBar = ({ selectedPage, onSetPage }) => {
       // TODO: What does this function do?
       return pages.map(page => (
          <li key={page.key}>
-          <SpecularButton onClick={() => onSetPage(page.key)} size="lg">
+          <SpecularButton onClick={() => onSetPage(page.key)} size="md">
             {page.name}
           </SpecularButton>
           </li>
@@ -22,7 +22,7 @@ const NavBar = ({ selectedPage, onSetPage }) => {
 
   return (
     <nav style={styles.navbar}>
-        <h1>My Amazing App</h1>
+        <h1>Judith Knight Portfolio</h1>
         <ul style={styles.navList}>
         {renderPageLinks()}
       </ul>
@@ -46,6 +46,7 @@ const styles = {
     listStyle: 'none',
     padding: 0,
     margin: 0,
+    marginTop:'2rem',
   },
 };
 
