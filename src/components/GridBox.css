@@ -1,6 +1,52 @@
+.ThisIsABox{
+    width: 40%;
+    margin: 1rem;
+    padding: 1rem 1rem;
+
+    position: relative;
+    padding: 2px;
+    border-radius: 14px;
+    overflow: hidden;
+    isolation: isolate;
+    display: flex;
+  }
+
+  @media (min-width: 600px) {
+  
   .ThisIsABox{
-    border: 1px solid #fff;
-    width: auto;
-    margin: 2rem;
-    padding: 1rem 2rem;
+    width:30%;
+  }
+
+  }
+  @media (min-width: 1000px) {
+  
+  .ThisIsABox{
+    width:15%;
+  }
+
+  }
+ .glow-card{
+  display: flex;
+ }
+  .glow-card::before{
+    content: "";
+    position: absolute;
+    inset: -60%;
+    background: conic-gradient(from 0deg, #f472b6, #a78bfa, #60a5fa, #f472b5b0);
+    animation: spin 5s linear infinite;
+    z-index: 0;
+  }
+ 
+  @keyframes spin{
+    to{ transform: rotate(360deg); }
+  }
+ 
+  .glow-card-inner{
+    position: relative;
+    z-index: 1;
+    background: #141318;
+    border-radius: 12px;
+    padding: 40px 32px;
+    text-align: center;
+    padding: 0.8rem;
   }
