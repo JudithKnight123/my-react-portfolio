@@ -123,6 +123,12 @@ const Masonry = ({
     });
   }, [columns, items, width]);
 
+   //new rule to fix auto page height problem
+  const containerHeight = useMemo(() => {
+    if (!grid.length) return 0;
+    return Math.max(...grid.map(item => item.y + item.h));
+  }, [grid]);
+
   const hasMounted = useRef(false);
 
   useLayoutEffect(() => {
@@ -217,8 +223,8 @@ const Masonry = ({
   };
 
   return (
-    <div ref={containerRef} className="list">
-      {grid.map(item => {
+  <div ref={containerRef} className="list" style={{ height: containerHeight }}>
+    {grid.map(item => {
         return (
           <div
             key={item.id}
