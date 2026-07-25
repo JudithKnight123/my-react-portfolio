@@ -1,0 +1,44 @@
+
+.about{
+  padding: 1rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-family: Inter, system-ui, sans-serif;
+}
+.about-badge{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #333333;
+}
+.about-top{
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 0;
+  color: #ccc;
+}
+
+.about h1{
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 600;
+  font-size: clamp(32px, 6vw, 52px);
+  line-height: 1.05;
+  margin: 0;
+  max-width: 14ch;
+}
+
+.about h1 em{
+  font-style: italic;
+}
+
+.about-sub{
+  font-size: 16px;
+  max-width: 46ch;
+  margin: 0;
+  color: #ccc;
+}

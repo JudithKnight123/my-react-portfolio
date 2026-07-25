@@ -1,61 +1,37 @@
 // HomePage.js
 import React from 'react';
-// import '../components/GlowingCard.css';
-import SoftAurora from '../components/SoftAurora';
-import TextType from '../components/TextType';
-import GridBox from '../components/GridBox';
+import './AboutPage.css';
+import Particles from '../components/Particles';
 
 const HomePage = () => {
   return (
+<>
+  <Particles
+    particleColors={["#ffffff"]}
+    particleCount={200}
+    particleSpread={10}
+    speed={0.1}
+    particleBaseSize={100}
+    moveParticlesOnHover
+    alphaParticles={false}
+    disableRotation={false}
+    pixelRatio={1}
+/>
 
-    <div className="aboutMeMain">
-          <SoftAurora
-          speed={0.6}
-          scale={1.5}
-          brightness={1}
-          color1="#f7f7f7"
-          color2="#e100ff"
-          noiseFrequency={2.5}
-          noiseAmplitude={1}
-          bandHeight={0.5}
-          bandSpread={1}
-          octaveDecay={0.1}
-          layerOffset={0}
-          colorSpeed={1}
-          enableMouseInteraction
-          mouseInfluence={0.25}
-        />
-      {/* Example 2: Customized speed and characters */}
-        <TextType 
-          as="h2"
-          text={["Hello I'm Judi!", "I design and build functional components for big brands!"]}
-          typingSpeed={75}
-          pauseDuration={1500}
-          showCursor
-          cursorCharacter="_"
-          deletingSpeed={50}
-          variableSpeedEnabled={false}
-          variableSpeedMin={60}
-          variableSpeedMax={120}
-          cursorBlinkDuration={0.5}
-        />
-      <p>I make functional digital designs, animations and emails for big brands!</p>
-    
-    <div className='ArrangeBoxes'>
-      
-      <GridBox 
-      heading="Project One" 
-      description="A short summary of the project." 
-      />
-      <GridBox 
-      heading="Project One" 
-      description="A short summary of the project." 
-      />
-
+  <div className="about">
+  <div className="about-badge">
+<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+  <path d="M5,20 V5 H20 M80,5 H95 V20 M95,80 V95 H80 M20,95 H5 V80 M22,38 H78 V74 H22 Z M40,30 H60 V38 H40 Z M35,56 A15,15 0 1 0 65,56 A15,15 0 1 0 35,56"/>
+</svg>
+  </div>
+  
+      <p className="about-top">UX/UI Designer & Developer</p>
+      <h1>I love builds <em>with</em> creative tools!</h1>
+      <p className="about-sub">
+        I’m a multidisciplinary designer and developer who specializes in building brands that are both beautifully designed and impeccably coded. 
+      </p>
     </div>
-    
-    
-    </div>
+    </>
   );
 };
 
