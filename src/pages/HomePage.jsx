@@ -1,67 +1,65 @@
 // HomePage.js
 import React from 'react';
 import Masonry from '../components/Masonry';
+import LiquidEther from '../components/LiquidEther';
+
+import group1 from '../assets/Group1.png';
+import group2 from '../assets/Group2.png';
+import group3 from '../assets/Group3.png';
+import group4 from '../assets/Group4.png';
+import group5 from '../assets/Group5.png';
+import group6 from '../assets/Group6.png';
+import group7 from '../assets/Group7.png';
+import group8 from '../assets/Group8.png';
 
 const items = [
    {
   id: "1",
-  img: "https://picsum.photos/id/1015/600/900?grayscale",
-  url: "https://example.com/one",
-  height: 700,
+  img: group1,
+  url: "https://github.com/JudithKnight123/my-bootcamp-portfolio",
+  height: 600,
 },
 {
   id: "2",
-  img: "https://picsum.photos/id/1011/600/750?grayscale",
-  url: "https://example.com/two",
-  height: 550,
-},
-{
-  id: "3",
-  img: "https://picsum.photos/id/1020/600/800?grayscale",
-  url: "https://example.com/three",
+  img: group2,
+  url: "https://github.com/JudithKnight123/my-bootcamp-portfolio",
   height: 800,
 },
 {
   id: "4",
-  img: "https://picsum.photos/id/1035/600/700?grayscale",
-  url: "https://example.com/four",
+  img: group4,
+  url: "https://github.com/JudithKnight123/my-bootcamp-portfolio",
+  height: 600,
+},
+{
+  id: "3",
+  img: group3,
+  url: "https://github.com/JudithKnight123/my-bootcamp-portfolio",
+  height: 800,
+},
+{
+  id: "7",
+  img: group7,
+  url: "https://github.com/JudithKnight123/full-stack-notes-app",
+  height: 800,
+},
+{
+  id: "6",
+  img: group6,
+  url: "https://github.com/JudithKnight123/python-readme-generator",
+  height: 800,
+},
+{
+  id: "8",
+  img: group8,
+  url: "https://github.com/JudithKnight123/full-stack-blog-application",
   height: 600,
 },
 {
   id: "5",
-  img: "https://picsum.photos/id/1041/600/850?grayscale",
-  url: "https://example.com/five",
-  height: 750,
-},
-{
-  id: "6",
-  img: "https://picsum.photos/id/1043/600/600?grayscale",
-  url: "https://example.com/six",
-  height: 500,
-},
-{
-  id: "7",
-  img: "https://picsum.photos/id/1050/600/900?grayscale",
-  url: "https://example.com/seven",
-  height: 700,
-},
-{
-  id: "8",
-  img: "https://picsum.photos/id/1059/600/750?grayscale",
-  url: "https://example.com/eight",
-  height: 620,
-},
-{
-  id: "9",
-  img: "https://picsum.photos/id/1069/600/800?grayscale",
-  url: "https://example.com/nine",
-  height: 680,
-},
-{
-  id: "10",
-  img: "https://picsum.photos/id/1074/600/650?grayscale",
-  url: "https://example.com/ten",
-  height: 560,
+  img: group5,
+  url: "https://github.com/rrana5106/geeks-unleashed",
+  height: 600,
 },
     // ... more items
 ];
@@ -69,7 +67,28 @@ const items = [
 
 const HomePage = () => {
   return (
-    <div className="textCenter">
+<>
+      <LiquidEther
+        colors={[ '#5227FF', '#FF9FFC', '#B497CF' ]}
+        mouseForce={20}
+        cursorSize={100}
+        isViscous
+        viscous={30}
+        iterationsViscous={32}
+        iterationsPoisson={32}
+        resolution={0.5}
+        isBounce={false}
+        autoDemo
+        autoSpeed={0.5}
+        autoIntensity={2.2}
+        takeoverDuration={0.25}
+        autoResumeDelay={3000}
+        autoRampDuration={0.6}
+        color0="#5227FF"
+        color1="#FF9FFC"
+        color2="#B497CF"
+    />
+    <div className="Center">
           <Masonry
         items={items}
         ease="power3.out"
@@ -82,6 +101,7 @@ const HomePage = () => {
         colorShiftOnHover={false}
       />
       </div>
+      </>
   );
 };
 
