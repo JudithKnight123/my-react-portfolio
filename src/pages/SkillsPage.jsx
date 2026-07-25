@@ -1,9 +1,8 @@
 // HomePage.js
 import React from 'react';
-// import '../components/GlowingCard.css';
-import SoftAurora from '../components/SoftAurora';
 import TextType from '../components/TextType';
 import GridBox from '../components/GridBox';
+import SoftAurora from '../components/SoftAurora';
 
 const HomePage = () => {
   return (

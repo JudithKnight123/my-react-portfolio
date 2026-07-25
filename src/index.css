@@ -75,4 +75,8 @@ button:focus-visible {
     justify-content: center;
     flex-flow: row wrap;
 }
-
+.Center{
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}

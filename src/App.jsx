@@ -1,6 +1,5 @@
 // App.js
 import { useState } from 'react';
-import Aurora from './components/Aurora';
 
 import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
@@ -15,12 +14,6 @@ function App() {
 
   return (
     <>
-<Aurora
-  colorStops={["#7cff67","#B497CF","#5227FF"]}
-  blend={0.5}
-  amplitude={1.0}
-  speed={1}
-/>
     <Layout selectedPage={page} onSetPage={setPage}>
 
       {page === 'home' && <HomePage />}
